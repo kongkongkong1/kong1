@@ -123,6 +123,7 @@ class ImageMerger:
          print(f"创建失败{str(e)}")
          pass
 
+
         for bgimagename in os.listdir(self.text_varbg):  #遍历bg目录下所有文件
          self.x_pi = int(self.entey1.get())
          self.y_pi = int(self.entey2.get())
@@ -183,7 +184,7 @@ class ImageMerger:
 
                         result1 = overlay_with_transparency(bg_image, icon_image1, xmin = 0, ymin = 0,trans_percent = 1)
                         result12 = Image.fromarray(np.uint8(result1))
-                        filename_list = filename.split(".")
+                        filename_list = filename.split(".png")
                         filename_list_without_extension = filename_list [0]
                         filename1 = "{}{}.png".format(filename_list_without_extension,var2)
                         aa_filename = os.path.join(bgfolder_path, filename1)   #保存路径和名字

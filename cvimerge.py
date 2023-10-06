@@ -66,6 +66,3 @@ def overlay_with_transparency(bgimg, fgimg, xmin = 0, ymin = 0,trans_percent = 1
 if __name__ == '__main__':
     print(111)
 
-
-
-#都是11
